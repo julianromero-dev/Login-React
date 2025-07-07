@@ -1,5 +1,4 @@
 import LoginPage from "./pages/LoginPages/LoginPage";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
