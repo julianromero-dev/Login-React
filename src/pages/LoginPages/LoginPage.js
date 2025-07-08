@@ -50,7 +50,7 @@ const Login = () => {
           <small className="text-muted d-block">
             ¿Olvidaste tu contraseña?
             {/* Enlace a tu página de recuperación */}
-            <a href="/recuperar"> Recuperar</a>
+            <a href="/forgot"> Recuperar</a>
           </small>
         </div>
       </div>
