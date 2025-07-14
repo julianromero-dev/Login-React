@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import Swal from 'sweetalert2';
 import { auth, googleProvider } from '../../firebase';
 import { signInWithPopup } from 'firebase/auth';
@@ -24,37 +23,48 @@ function LoginPage() {
         Swal.fire("Error", "No se pudo iniciar sesión con Google.", "error");
       });
   };
+
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <div className="card shadow-lg">
+          <div className="card shadow-lg rounded">
             <div className="card-body">
               <h3 className="card-title text-center mb-4">Iniciar Sesión</h3>
 
               <form id="loginForm">
-                <div class="mb-3">
-                  <label for="email" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required />
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">Correo electrónico</label>
+                  <input type="email" className="form-control" id="email" placeholder="Ingresa tu correo" required />
                 </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="password" placeholder="Contraseña" required />
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label">Contraseña</label>
+                  <input type="password" className="form-control" id="password" placeholder="Contraseña" required />
                 </div>
-                <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                <div className="d-grid gap-2">
+                  <button type="submit" className="btn btn-primary">Ingresar</button>
                 </div>
-                <div>
-                  <button type="button" onClick={handleGoogleLogin}>
+
+                <div className="mt-3">
+                  <button
+                    type="button"
+                    onClick={handleGoogleLogin}
+                    className="hover-red btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-2"
+                  >
+                    <img
+                      src={`${process.env.PUBLIC_URL}/images/icons8-logo-de-google.svg`}
+                      alt="Google"
+                      style={{ width: '20px', height: '20px' }}
+                    />
                     Iniciar sesión con Google
                   </button>
+
                 </div>
               </form>
 
-              <div class="mt-3 text-center">
-                <a href="/register">¿No tienes cuenta? Regístrate</a><br />
-                <a href="/forgot">¿Olvidaste tu contraseña?</a><br />
-
+              <div className="mt-4 text-center">
+                <a href="/register" className="text-decoration-none">¿No tienes cuenta? Regístrate</a><br />
+                <a href="/forgot" className="text-decoration-none">¿Olvidaste tu contraseña?</a>
               </div>
             </div>
           </div>
