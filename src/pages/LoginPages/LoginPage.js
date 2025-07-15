@@ -49,7 +49,7 @@ function LoginPage() {
                   <button
                     type="button"
                     onClick={handleGoogleLogin}
-                    className="hover-red btn btn-outline-danger w-100 d-flex align-items-center justify-content-center gap-2"
+                    className="btn btn-outline-success w-100 d-flex align-items-center justify-content-center gap-2"
                   >
                     <img
                       src={`${process.env.PUBLIC_URL}/images/icons8-logo-de-google.svg`}
