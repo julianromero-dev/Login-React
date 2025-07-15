@@ -6,6 +6,7 @@ import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import NotFoundPage from "./pages/components/NotFoundPage";
 import ProtectedRoute from "./pages/components/ProtectedRoute";
 
+
 function App() {
 
   return (
