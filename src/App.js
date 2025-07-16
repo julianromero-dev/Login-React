@@ -3,6 +3,7 @@ import LoginPage from "./pages/LoginPages/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage/ForgotPasswordPage";
 import DashboardPage from "./pages/DashboardPage/DashboardPage";
+import UsersPage from "./pages/UsersPage/UsersPage";
 import NotFoundPage from "./pages/components/NotFoundPage";
 import ProtectedRoute from "./pages/components/ProtectedRoute";
 
@@ -18,6 +19,7 @@ function App() {
 
        {/* Ruta protegida con Firebase Auth */}
        <Route path="/dashboard" element={<ProtectedRoute> <DashboardPage /> </ProtectedRoute> } />
+       <Route path="/users" element={<ProtectedRoute> <UsersPage /> </ProtectedRoute> } />
 
        {/* Ruta genérica para páginas no encontradas */}
        <Route path="*" element={<NotFoundPage />} />

@@ -53,7 +53,7 @@ function DashboardPage() {
                 <span className="nav-link active">Inicio</span>
               </li>
               <li className="nav-item">
-                <span className="nav-link">Perfil</span>
+                <a className="nav-link" href='/users'>Users </a>
               </li>
             </ul>
             <button className="btn btn-outline-light" onClick={handleLogout}>
@@ -62,7 +62,6 @@ function DashboardPage() {
           </div>
         </div>
       </nav>
-
 
         <div id="carouselExampleCaptions" className="carousel slide" style={{maxWidth: 900, margin: 'auto'}}>
           <div className="carousel-indicators">
@@ -103,6 +102,7 @@ function DashboardPage() {
           </button>
         </div>
       </div>
+      
     
   );
 }
