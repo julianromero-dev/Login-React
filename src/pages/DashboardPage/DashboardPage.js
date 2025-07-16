@@ -63,10 +63,8 @@ function DashboardPage() {
         </div>
       </nav>
 
-      <div className="container mt-5 text-center">
-        <h1>Bienvenido a mi página</h1>
 
-        <div id="carouselExampleCaptions" className="carousel slide" style={{maxWidth: 800, margin: 'auto'}}>
+        <div id="carouselExampleCaptions" className="carousel slide" style={{maxWidth: 900, margin: 'auto'}}>
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,7 +103,6 @@ function DashboardPage() {
           </button>
         </div>
       </div>
-    </div>
     
   );
 }
