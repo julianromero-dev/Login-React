@@ -6,7 +6,7 @@ import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import UsersPage from "./pages/UsersPage/UsersPage";
 import NotFoundPage from "./pages/components/NotFoundPage";
 import ProtectedRoute from "./pages/components/ProtectedRoute";
-
+import ResetPasswordPage from "./pages/ResetPasswordPage/ResetPasswordPage";  
 
 function App() {
 
@@ -16,6 +16,8 @@ function App() {
       <Route path="/" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/forgot" element={<ForgotPasswordPage />} />
+      <Route path="/reset-password" element={<ResetPasswordPage />} />
+
 
        {/* Ruta protegida con Firebase Auth */}
        <Route path="/dashboard" element={<ProtectedRoute> <DashboardPage /> </ProtectedRoute> } />
